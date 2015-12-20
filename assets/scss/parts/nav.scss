@@ -1,0 +1,23 @@
+nav {
+    background:$navBackground;
+    height:62px;
+    position:absolute;
+    bottom:0px;
+    display: block;
+    width:100%;
+    text-align:center;
+    a {
+        color:$navColor;
+        text-transform: uppercase;
+        padding:22px 25px;
+        display: inline-block;
+        text-decoration: none;
+        line-height:18px;
+        &:hover {
+            color:$white;
+        }
+        .active {
+            background:$darkBlue;
+        }
+    }
+}

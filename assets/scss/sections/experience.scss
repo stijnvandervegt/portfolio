@@ -1,0 +1,28 @@
+#experience, #education {
+    .row {
+        margin-bottom:50px;
+        .work-year {
+            @include span-columns(2);
+            background:$red;
+            @include border-radius(50%);
+            height:140px;
+            max-width:140px;
+            text-align:center;
+            line-height:140px;
+            span {
+                color:$white;
+            }
+            @include media(max-width $mobile) {
+                @include span-columns(12);
+            }
+        }
+        .item {
+            background:$experienceBackground;
+            @include span-columns(10);
+            padding:22px 47px 6px 47px;
+            @include media(max-width $mobile) {
+                @include span-columns(12);
+            }
+        }
+    }
+}

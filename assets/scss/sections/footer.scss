@@ -1,0 +1,44 @@
+footer {
+    padding:50px 0;
+    background: $grey;
+    h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        color: $white;
+    }
+    .contact {
+        @include span-columns(4);
+        li {
+            color: $footerColor;
+        }
+    }
+    .form {
+        @include span-columns(8);
+        form {
+
+            input, textarea {
+                background: $inputBackground;
+                color: $footerColor;
+                padding: 15px 30px;
+                margin-right: 25px;
+                margin-bottom:25px;
+            }
+            input {
+                @include span-columns(6);
+                @include omega(2n);
+            }
+            textarea {
+                @include span-columns(12);
+            }
+            button {
+                background: $red;
+                color:$white;
+                float:right;
+                &:hover {
+                    background:$hoverRed;
+                }
+            }
+        }
+    }
+}

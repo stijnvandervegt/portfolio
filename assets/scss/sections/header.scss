@@ -1,0 +1,22 @@
+#head {
+    background-color: $transparentBlack;
+    background-image: url(../img/header.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    -webkit-background-size: cover;
+    height:100%;
+    position: relative;
+    hgroup {
+        @include outer-container();
+        padding:30px 0 30px;
+        background:$transparentLight;
+        border:1px solid $white;
+        text-align:center;
+        position: relative;
+        top: 50%;
+        @include transform(translateY(-50%));
+        h2 {
+            text-transform:none;
+        }
+    }
+}

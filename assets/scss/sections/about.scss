@@ -1,0 +1,23 @@
+#about-me {
+    background:$green;
+    article {
+        color:$white;
+        @include span-columns(8);
+        @include media(max-width $mobile) {
+            @include span-columns(12);
+        }
+    }
+    figure {
+        @include span-columns(4);
+
+        @include media(max-width $mobile) {
+            @include span-columns(12);
+        }
+        img {
+            max-width:254px;
+            max-height:254px;
+            @include border-radius(50%);
+        }
+    }
+
+}
