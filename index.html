@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body id="app">
 
 <header id="head">
 
@@ -26,14 +26,14 @@
 
         <h2>Web developer</h2>
     </hgroup>
-    <nav>
-        <a href="">Home</a>
-        <a href="">About me</a>
-        <a href="">Skills</a>
-        <a href="">Expierence</a>
-        <a href="">Education</a>
-        <a href="">Portfolio</a>
-        <a href="">Contact</a>
+    <nav id="navigation" v-bind:class="classObject">
+
+        <a href="#" @click="navigate('head', $event)">Home</a>
+        <a href="" @click="navigate('about-me', $event)">About me</a>
+        <a href="" @click="navigate('experience', $event)">Expierence</a>
+        <a href="" @click="navigate('education', $event)">Education</a>
+        <a href="" @click="navigate('portfolio', $event)">Portfolio</a>
+        <a href="" @click="navigate('contact', $event)">Contact</a>
     </nav>
 </header>
 
@@ -280,6 +280,6 @@
         </div>
     </div>
 </footer>
-
+<script src="/dist/assets/js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

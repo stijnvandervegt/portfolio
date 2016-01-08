@@ -96,6 +96,10 @@ nav {
   display: block;
   width: 100%;
   text-align: center; }
+  nav.sticky {
+    position: fixed;
+    top: 0;
+    bottom: auto; }
   nav a {
     color: #c3c8d6;
     text-transform: uppercase;
@@ -107,6 +111,12 @@ nav {
       color: #fff; }
     nav a .active {
       background: #1b1f29; }
+  @media screen and (max-width: 479px) {
+    nav a {
+      display: block;
+      width: 100%;
+      background: #262b37;
+      display: none; } }
 
 #head {
   background-color: rgba(0, 0, 0, 0.7);
@@ -137,6 +147,14 @@ nav {
       display: table; }
     #head hgroup h2 {
       text-transform: none; }
+    @media screen and (max-width: 479px) {
+      #head hgroup {
+        margin: 0 20px; }
+        #head hgroup h1 {
+          font-size: 28px;
+          line-height: 28px; }
+        #head hgroup h2 {
+          font-size: 20px; } }
 
 #about-me {
   background: #7FBEAB; }
@@ -148,6 +166,8 @@ nav {
     width: 65.88078%; }
     #about-me article:last-child {
       margin-right: 0; }
+    #about-me article p {
+      text-align: justify; }
     @media screen and (max-width: 479px) {
       #about-me article {
         float: left;
@@ -155,7 +175,11 @@ nav {
         margin-right: 2.35765%;
         width: 100%; }
         #about-me article:last-child {
-          margin-right: 0; } }
+          margin-right: 0; }
+        #about-me article button {
+          margin: 0 auto;
+          position: relative;
+          display: block; } }
   #about-me figure {
     float: left;
     display: block;
@@ -168,7 +192,9 @@ nav {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        margin: 25px 0 0;
+        text-align: center; }
         #about-me figure:last-child {
           margin-right: 0; } }
     #about-me figure img {
@@ -212,7 +238,9 @@ nav {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        margin: 0 auto 25px;
+        float: none; }
         #experience .row .work-year:last-child, #education .row .work-year:last-child {
           margin-right: 0; } }
   #experience .row .item, #education .row .item {
@@ -248,7 +276,8 @@ nav {
       text-decoration: none;
       padding: 16px 18px;
       font-size: 13px;
-      margin-right: 5px; }
+      margin-right: 10px;
+      margin-bottom: 10px; }
       #portfolio filter a:last-child {
         margin-right: 0; }
       #portfolio filter a:hover {
@@ -273,6 +302,18 @@ nav {
         width: 100%; }
       #portfolio .portfolio-container .item .hover-box {
         display: none; }
+      @media screen and (max-width: 479px) {
+        #portfolio .portfolio-container .item {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 48.82117%; }
+          #portfolio .portfolio-container .item:last-child {
+            margin-right: 0; }
+          #portfolio .portfolio-container .item:nth-child(2n) {
+            margin-right: 0; }
+          #portfolio .portfolio-container .item:nth-child(2n+1) {
+            clear: left; } }
 
 footer {
   padding: 50px 0;
@@ -291,6 +332,14 @@ footer {
       margin-right: 0; }
     footer .contact li {
       color: #93959c; }
+    @media screen and (max-width: 479px) {
+      footer .contact {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        footer .contact:last-child {
+          margin-right: 0; } }
   footer .form {
     float: left;
     display: block;
@@ -328,3 +377,21 @@ footer {
       float: right; }
       footer .form form button:hover {
         background: #f5534b; }
+    @media screen and (max-width: 479px) {
+      footer .form {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        footer .form:last-child {
+          margin-right: 0; }
+        footer .form form input {
+          float: left;
+          display: block;
+          margin-right: 2.35765%;
+          width: 100%; }
+          footer .form form input:last-child {
+            margin-right: 0; } }
+  @media screen and (max-width: 479px) {
+    footer {
+      padding: 50px 50px; } }

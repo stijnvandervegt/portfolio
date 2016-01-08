@@ -7,7 +7,14 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
     imageminPngquant = require('imagemin-pngquant'),
-    bourbon = require('bourbon');
+    source = require('vinyl-source-stream'),
+    sourcemaps = require('gulp-sourcemaps'),
+    bourbon = require('bourbon'),
+    buffer = require('vinyl-buffer'),
+    browserify = require('browserify'),
+    uglify = require('gulp-uglify'),
+    gutil = require('gulp-util'),
+    clean = require('gulp-clean');
 
 var paths = {
     scss: './assets/scss/*.scss'
@@ -36,10 +43,30 @@ gulp.task('styles', function() {
         .pipe(notify({message: 'Styles task complete'}));
 });
 
+gulp.task('scripts', function() {
+    return browserify('assets/js/main.js', {
+        debug: true
+    })
+        .bundle()
+        .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+        .pipe(source('scripts.js'))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({
+            loadMaps: true
+        })) // loads map from browserify file
+        .pipe(uglify())
+        .pipe(sourcemaps.write('./')) // writes .map file
+        .pipe(gulp.dest('dist/assets/js'))
+        .pipe(notify({
+            message: 'ES6 Scripts task complete'
+        }));
+});
+
 gulp.task('default', function () {
     runSequence(['styles', 'images']);
 });
 
 gulp.task('watch', function () {
     gulp.watch('assets/scss/**/*.scss', ['styles']);
+    gulp.watch('assets/js/**/*.js', ['scripts']);
 });

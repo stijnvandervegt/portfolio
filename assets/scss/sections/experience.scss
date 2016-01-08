@@ -14,6 +14,9 @@
             }
             @include media(max-width $mobile) {
                 @include span-columns(12);
+                margin:0 auto 25px;
+                float:none;
+
             }
         }
         .item {

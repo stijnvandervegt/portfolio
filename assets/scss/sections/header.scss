@@ -18,5 +18,16 @@
         h2 {
             text-transform:none;
         }
+        @include media(max-width $mobile) {
+            margin:0 20px;
+            h1 {
+                font-size:28px;
+                line-height:28px;
+            }
+            h2 {
+                font-size:20px;
+            }
+        }
     }
+
 }

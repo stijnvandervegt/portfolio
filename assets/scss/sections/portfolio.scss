@@ -10,7 +10,8 @@
             text-decoration: none;
             padding:16px 18px;
             font-size:13px;
-            margin-right:5px;
+            margin-right:10px;
+            margin-bottom:10px;
             &:last-child {
                 margin-right:0;
             }
@@ -33,6 +34,10 @@
             }
             .hover-box {
                 display:none;
+            }
+            @include media(max-width $mobile) {
+                @include span-columns(6);
+                @include omega(2n);
             }
         }
     }

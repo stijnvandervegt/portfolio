@@ -3,8 +3,16 @@
     article {
         color:$white;
         @include span-columns(8);
+        p {
+            text-align: justify;
+        }
         @include media(max-width $mobile) {
             @include span-columns(12);
+            button {
+                margin: 0 auto;
+                position: relative;
+                display: block;
+            }
         }
     }
     figure {
@@ -12,6 +20,8 @@
 
         @include media(max-width $mobile) {
             @include span-columns(12);
+            margin:25px 0 0;
+            text-align: center;
         }
         img {
             max-width:254px;

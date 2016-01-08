@@ -6,6 +6,11 @@ nav {
     display: block;
     width:100%;
     text-align:center;
+    &.sticky {
+        position:fixed;
+        top:0;
+        bottom:auto;
+    }
     a {
         color:$navColor;
         text-transform: uppercase;
@@ -18,6 +23,15 @@ nav {
         }
         .active {
             background:$darkBlue;
+        }
+
+    }
+    @include media(max-width $mobile) {
+        a {
+            display:block;
+            width:100%;
+            background:$navBackground;
+            display: none;
         }
     }
 }

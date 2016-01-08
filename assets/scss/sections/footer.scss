@@ -12,6 +12,9 @@ footer {
         li {
             color: $footerColor;
         }
+        @include media(max-width $mobile) {
+            @include span-columns(12);
+        }
     }
     .form {
         @include span-columns(8);
@@ -40,5 +43,16 @@ footer {
                 }
             }
         }
+        @include media(max-width $mobile) {
+            @include span-columns(12);
+            form {
+                input {
+                    @include span-columns(12);
+                }
+            }
+        }
+    }
+    @include media(max-width $mobile) {
+       padding:50px 50px;
     }
 }
