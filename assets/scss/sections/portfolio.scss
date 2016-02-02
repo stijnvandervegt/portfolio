@@ -1,6 +1,6 @@
 #portfolio {
     background: $blue;
-    filter {
+    .filter {
         text-align:center;
         display: block;
         a {
@@ -23,14 +23,17 @@
     }
     .portfolio-container {
         margin:25px 0;
-
+        position: relative;
         .item {
             @include span-columns(3);
             @include omega(4n);
             box-sizing: border-box;
             margin-bottom:25px;
+            opacity: 1;
+            @include transition(all 0.5s ease-in-out);
             img {
                 width:100%;
+
             }
             .hover-box {
                 display:none;
@@ -38,6 +41,19 @@
             @include media(max-width $mobile) {
                 @include span-columns(6);
                 @include omega(2n);
+            }
+            &.active {
+                position: absolute;
+                left:0;
+                top:0;
+                img {
+
+
+
+                }
+            }
+            &.hide {
+                opacity: 0;
             }
         }
     }

@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Worldkorfball",
+        "description": "",
+        "url": "http://worldkorfball.org",
+        "thumbnail": "dist/assets/img/projects/thumb.worldkorfball-home.png",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "Atag One",
+        "description": "",
+        "url": "http://atag-one.com",
+        "thumbnail": "dist/assets/img/projects/thumb.atag-header.jpg",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "Volvo Proefzweden",
+        "description": "",
+        "url": "",
+        "thumbnail": "dist/assets/img/projects/thumb.volvo-proefzweden.jpg",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "Hotel Pincoffs",
+        "description": "",
+        "url": "http://hotelpincoffs.nl",
+        "thumbnail": "dist/assets/img/projects/thumb.hotelpincoffs.png",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "Welzijn Barneveld",
+        "description": "",
+        "url": "http://welzijnbarneveld.nl",
+        "thumbnail": "dist/assets/img/projects/thumb.wzb-vacatures.png",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "Kanon Loading Equipment",
+        "description": "Offerte calculatie tool",
+        "url": "",
+        "thumbnail": "dist/assets/img/projects/thumb.kanon.jpg",
+        "images": [],
+        "showModal": false
+    },
+    {
+        "name": "KPMG",
+        "description": "Login tool voor raad.kpmg.nl",
+        "url": "",
+        "thumbnail": "dist/assets/img/projects/thumb.kpmg-raad.png",
+        "images": [],
+        "showModal": false
+    }
+
+]

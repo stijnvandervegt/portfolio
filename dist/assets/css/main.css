@@ -71,7 +71,7 @@ section {
       section header .subtitle.white {
         color: #fff; }
 
-button {
+button, a.btn {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -82,8 +82,9 @@ button {
   color: #fff;
   -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out; }
-  button:hover {
+  transition: background 0.5s ease-in-out;
+  text-decoration: none; }
+  button:hover, a.btn:hover {
     background: #373d4c;
     color: #ccc;
     text-decoration: none; }
@@ -117,6 +118,74 @@ nav {
       width: 100%;
       background: #262b37;
       display: none; } }
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  transition: opacity .3s ease; }
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+
+#portfolio .modal-container {
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all .3s ease; }
+  #portfolio .modal-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #portfolio .modal-container figure {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    #portfolio .modal-container figure:last-child {
+      margin-right: 0; }
+  #portfolio .modal-container .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    #portfolio .modal-container .content:last-child {
+      margin-right: 0; }
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #00BDBD; }
+
+.modal-body {
+  margin: 20px 0; }
+
+.modal-default-button {
+  float: right; }
+
+/*
+ * the following styles are auto-applied to elements with
+ * v-transition="modal" when their visiblity is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+.modal-enter, .modal-leave {
+  opacity: 0; }
+
+.modal-enter .modal-container,
+.modal-leave .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
 
 #head {
   background-color: rgba(0, 0, 0, 0.7);
@@ -266,10 +335,10 @@ nav {
 
 #portfolio {
   background: #00BDBD; }
-  #portfolio filter {
+  #portfolio .filter {
     text-align: center;
     display: block; }
-    #portfolio filter a {
+    #portfolio .filter a {
       color: #fff;
       border: 1px solid #fff;
       display: inline-block;
@@ -278,20 +347,25 @@ nav {
       font-size: 13px;
       margin-right: 10px;
       margin-bottom: 10px; }
-      #portfolio filter a:last-child {
+      #portfolio .filter a:last-child {
         margin-right: 0; }
-      #portfolio filter a:hover {
+      #portfolio .filter a:hover {
         color: #1b1f29;
         border: 1px solid #1b1f29; }
   #portfolio .portfolio-container {
-    margin: 25px 0; }
+    margin: 25px 0;
+    position: relative; }
     #portfolio .portfolio-container .item {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 23.23176%;
       box-sizing: border-box;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
       #portfolio .portfolio-container .item:last-child {
         margin-right: 0; }
       #portfolio .portfolio-container .item:nth-child(4n) {
@@ -314,6 +388,12 @@ nav {
             margin-right: 0; }
           #portfolio .portfolio-container .item:nth-child(2n+1) {
             clear: left; } }
+      #portfolio .portfolio-container .item.active {
+        position: absolute;
+        left: 0;
+        top: 0; }
+      #portfolio .portfolio-container .item.hide {
+        opacity: 0; }
 
 footer {
   padding: 50px 0;
