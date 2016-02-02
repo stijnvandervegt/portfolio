@@ -1,26 +1,32 @@
 [
     {
         "name": "Worldkorfball",
-        "description": "",
+        "description": "Worldkorfball is een platform van het IKF (International Korfball Federation). Op deze website worden alle statistieken van internationale korfbal toernooien weergegeven. Door middel van client software worden de statisitieken live geupdate tijdens een website.",
         "url": "http://worldkorfball.org",
         "thumbnail": "dist/assets/img/projects/thumb.worldkorfball-home.png",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "PHP, API, Wordpress",
         "showModal": false
     },
     {
         "name": "Atag One",
-        "description": "",
+        "description": "ATAG One is de slimme thermostaat die met je meedenkt en vooruitkijkt. In opdracht van een groot bureau gingen we aan de slag met de campagnewebsite. Het is een single page geworden, met onder het oppervlak een aantal hoogstandjes.",
         "url": "http://atag-one.com",
         "thumbnail": "dist/assets/img/projects/thumb.atag-header.jpg",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "Javascript, Backbone, Marionette, RequireJs",
         "showModal": false
     },
     {
         "name": "Volvo Proefzweden",
-        "description": "",
+        "description": "Samen met een van Nederlands grootste internetbureaus hebben we in het najaar van 2014 als onderaannemer gewerkt aan de front-end van een bijzondere website, namelijk de campagnewebsite Proef Zweden van Volvo. Op het oog lijkt de single page website vrij recht-toe-recht-aan, maar als je er dieper induikt kom je steeds mooiere dingen tegen.",
         "url": "",
         "thumbnail": "dist/assets/img/projects/thumb.volvo-proefzweden.jpg",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "Javascript, Backbone, Facebook API, PHP",
         "showModal": false
     },
     {
@@ -29,14 +35,18 @@
         "url": "http://hotelpincoffs.nl",
         "thumbnail": "dist/assets/img/projects/thumb.hotelpincoffs.png",
         "images": [],
+        "employer" : "Hoteliers",
+        "keywords": "PHP, Zend Framework",
         "showModal": false
     },
     {
         "name": "Welzijn Barneveld",
-        "description": "",
+        "description": "We begonnen met de website. Maar gezien alle ontwikkelingen in de wereld van zorg en welzijn is het ook wel handig als je via de website eenvoudig vraag en aanbod van vrijwilligers kunt matchen. Vanuit die gedachte is de vacaturebank ontstaan, die is verweven in de website van Welzijnbarneveld.",
         "url": "http://welzijnbarneveld.nl",
         "thumbnail": "dist/assets/img/projects/thumb.wzb-vacatures.png",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "PHP, Wordpress, Javascript",
         "showModal": false
     },
     {
@@ -45,6 +55,8 @@
         "url": "",
         "thumbnail": "dist/assets/img/projects/thumb.kanon.jpg",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "PHP, Laravel, Angular",
         "showModal": false
     },
     {
@@ -53,6 +65,8 @@
         "url": "",
         "thumbnail": "dist/assets/img/projects/thumb.kpmg-raad.png",
         "images": [],
+        "employer" : "Draad internetprojecten",
+        "keywords": "PHP, Security, Copernica API",
         "showModal": false
     }
 

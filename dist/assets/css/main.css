@@ -187,6 +187,46 @@ nav {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
+.modal {
+  position: relative; }
+  .modal .modal-close {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background: #fff;
+    cursor: pointer; }
+    .modal .modal-close:after, .modal .modal-close:before {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      height: 1.5em;
+      width: 0.15em;
+      background: #ddd;
+      content: '';
+      display: block;
+      margin: -3px 0 0 -1px; }
+    .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+      background: #c4c4c4; }
+    .modal .modal-close:before {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  .modal .modal-footer a {
+    position: absolute;
+    right: 1.5em;
+    bottom: 1.5em; }
+
 #head {
   background-color: rgba(0, 0, 0, 0.7);
   background-image: url(../img/header.jpg);

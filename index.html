@@ -42,8 +42,8 @@
 <section id="about-me">
     <div class="container">
         <header>
-            <h2 class="white">About me</h2>
-            <span class="subtitle white">A small introduction about my self</span>
+            <h2 class="white">Over mij</h2>
+            <span class="subtitle white">Een korte introductie</span>
         </header>
         <div class="row">
             <article>
@@ -60,7 +60,7 @@
                 <p>Ik ben gewend om in teamverband te werken. Code die niet overdraagbaar is, is geen code. Structuur en
                     overzicht is erg belangrijk. Bij Draad schakelde ik in al mijn projecten rechtstreeks met de
                     eindklant.</p>
-                <button>Print hier mijn CV</button>
+                <button>Printbaar CV</button>
             </article>
             <figure>
                 <img src="assets/img/profile.jpg" alt="profile photo"/>
@@ -118,8 +118,8 @@
 <section id="education">
     <div class="container">
         <header>
-            <h2>Education</h2>
-            <span class="subtitle">Studies</span>
+            <h2>Opleidingen</h2>
+            <span class="subtitle">Studierichting</span>
         </header>
 
         <div class="row">
@@ -151,7 +151,7 @@
     <div class="container">
         <header>
             <h2 class="white">Portfolio</h2>
-            <span class="subtitle white">showcase of my latest works</span>
+            <span class="subtitle white">Laatste werk</span>
         </header>
        <!-- <div class="filter">
             <a href="">All</a>
@@ -167,17 +167,9 @@
 
 </section>
 
-<section id="contact">
-    <header>
-        <h2>GET IN TOUCH</h2>
-        <span class="subtitle">Please feel free if you would like to have a chat</span>
-    </header>
-    <map>
 
-    </map>
-</section>
 
-<footer>
+<footer id="contact">
     <div class="container">
         <div class="contact">
             <h3>Contact details</h3>
@@ -211,16 +203,14 @@
             </span>
         </div>
 
-        <!-- use the modal component, pass in the prop -->
-
         <a href="#portfolio" @click="showModal(project)" >
             <img v-bind:src="project.thumbnail" alt="{{ project.name }}">
         </a>
         <modal :show.sync="project.showModal">
 
             <h3 slot="header">{{ project.name }}
-                <a href="#portfolio" class="modal-default-button" @click="project.showModal = false">
-                    Sluiten
+                <a href="#portfolio" class="modal-default-button modal-close" @click="project.showModal = false">
+
                 </a>
             </h3>
             <div slot="body">
@@ -232,7 +222,7 @@
                 </div>
             </div>
             <div slot="footer">
-
+                <em>Keywords: {{ project.keywords }}</em>
                 <a href="{{ project.url }}" class="btn" target="_blank">Bekijk het project</a>
 
             </div>
@@ -255,7 +245,7 @@
 <script type="x/template" id="modal-template">
     <div class="modal-mask" v-show="show" transition="modal">
         <div class="modal-wrapper">
-            <div class="modal-container">
+            <div class="modal-container modal">
 
                 <div class="modal-header">
                     <slot name="header">
