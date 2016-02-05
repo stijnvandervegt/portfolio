@@ -1,280 +1,280 @@
-<html>
+    <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Portfolio</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,900,400,700,400italic' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="dist/assets/css/main.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,900,400,700,400italic' rel='stylesheet'
+              type='text/css'>
+        <link rel="stylesheet" href="dist/assets/css/main.css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="dist/assets/images/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/images/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/images/apple-touch-icon-114x114.png"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="dist/assets/images/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="dist/assets/images/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="dist/assets/images/apple-touch-icon-114x114.png"/>
 
-</head>
+    </head>
 
-<body id="app">
+    <body id="app">
 
-<header id="head">
+    <header id="head">
 
-    <hgroup>
-        <h1>Stijn van der Vegt</h1>
+        <hgroup>
+            <h1>Stijn van der Vegt</h1>
 
-        <h2>Web developer</h2>
-    </hgroup>
+            <h2>Web developer</h2>
+        </hgroup>
 
-    <nav id="navigation" v-bind:class="classObject">
-        <a href="#" @click="navigate('head', $event)">Home</a>
-        <a href="" @click="navigate('about-me', $event)">About me</a>
-        <a href="" @click="navigate('experience', $event)">Expierence</a>
-        <a href="" @click="navigate('education', $event)">Education</a>
-        <a href="" @click="navigate('portfolio', $event)">Portfolio</a>
-        <a href="" @click="navigate('contact', $event)">Contact</a>
-    </nav>
+        <nav id="navigation" v-bind:class="classObject">
+            <a href="#" @click="navigate('head', $event)">Home</a>
+            <a href="" @click="navigate('about-me', $event)">About me</a>
+            <a href="" @click="navigate('experience', $event)">Expierence</a>
+            <a href="" @click="navigate('education', $event)">Education</a>
+            <a href="" @click="navigate('portfolio', $event)">Portfolio</a>
+            <a href="" @click="navigate('contact', $event)">Contact</a>
+        </nav>
 
-</header>
-
-
-<section id="about-me">
-    <div class="container">
-        <header>
-            <h2 class="white">Over mij</h2>
-            <span class="subtitle white">Een korte introductie</span>
-        </header>
-        <div class="row">
-            <article>
-                <h3>Stijn van der Vegt</h3>
-
-                <p>Mijn naam is Stijn van der Vegt, 27 jaar en woonachtig in Amsterdam. Momenteel heb ik ruim 4 jaar
-                    ervaring als front-end developer. Ik ben in 2013 van Media Concepts overgestapt naar Draad om daar
-                    als developer aan de slag te gaan. In twee jaar heb ik mij ontwikkeld tot een betrouwbare en
-                    toegewijde developer met veel kennis en ervaring in zowel front-end als back-end development. Open
-                    en altijd gretig om nieuwe dingen te leren of te delen. In de zoektocht naar een vaste baan binnen
-                    een grotere organisatie heb ik samen met Draad besloten eerst een periode van minimaal drie maanden
-                    aan de slag te gaan als freelance developer, bij voorkeur in Amsterdam.</p>
-
-                <p>Ik ben gewend om in teamverband te werken. Code die niet overdraagbaar is, is geen code. Structuur en
-                    overzicht is erg belangrijk. Bij Draad schakelde ik in al mijn projecten rechtstreeks met de
-                    eindklant.</p>
-                <button>Printbaar CV</button>
-            </article>
-            <figure>
-                <img src="assets/img/profile.jpg" alt="profile photo"/>
-            </figure>
-        </div>
-    </div>
-</section>
-
-<!-- <section id="skills">
-     <header>
-         <h2>Technical skills</h2>
-         <span class="subtitle"></span>
-     </header>
-     <div class="skills">
-         <div class="skill">
-             <canvas></canvas>
-             <hgroup>
-                 <h3>PHP</h3>
-                 <p>Donec accumsan Ligula vitae mag na crabitur id</p>
-             </hgroup>
-         </div>
-     </div>
- </section>-->
-<section id="experience">
-    <div class="container">
-        <header>
-            <h2>Werkervaring</h2>
-            <span class="subtitle">Mijn recente werkgevers</span>
-        </header>
-        <div class="row">
-            <div class="work-year">
-                <span>08-2013 - heden</span>
-            </div>
-            <div class="item">
-                <h4>Draad internetprojecten</h4>
-                <h5>Web developer</h5>
-
-                <p>Ontwikkelen van applicaties op basis van Laravel. Custom Wordpress development. Front-end development op basis van Angular. </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="work-year">
-                <span>01-2012 - 07-2013</span>
-            </div>
-            <div class="item">
-                <h4>Hoteliers</h4>
-                <h5>Web developer</h5>
-
-                <p>Als allround webdeveloper werkzaam voor vele hotelwebsites. Werkzaamheden vooral op het gebied van PHP development en het ontwikkelen van een nieuwe websitebuilder in Zend Framework.
-                    Daarnaast was ik verantwoordelijk voor de doorontwikkeling van een aantal maatwerk projecten zoals en webshops.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="education">
-    <div class="container">
-        <header>
-            <h2>Opleidingen</h2>
-            <span class="subtitle">Studierichting</span>
-        </header>
-
-        <div class="row">
-            <div class="work-year">
-                <span>2009 - juni 2015</span>
-            </div>
-            <div class="item">
-                <h4>Communication and multimedia design</h4>
-                <h5>Web developer</h5>
-
-                <p>Studierichting techniek, design & interinteractie</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="work-year">
-                <span>2005 – 2009</span>
-            </div>
-            <div class="item">
-                <h4>CIOS Sport en Bewegen</h4>
-                <h5>Web developer</h5>
-
-                <p>Studierichting onderwijs.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio">
-    <div class="container">
-        <header>
-            <h2 class="white">Portfolio</h2>
-            <span class="subtitle white">Laatste werk</span>
-        </header>
-       <!-- <div class="filter">
-            <a href="">All</a>
-            <a href="">Application</a>
-            <a href="">Frontend</a>
-            <a href="">Backend</a>
-        </div>-->
-        <div class="portfolio-container">
-            <portfolio></portfolio>
-
-        </div>
-    </div>
-
-</section>
+    </header>
 
 
+    <section id="about-me">
+        <div class="container">
+            <header>
+                <h2 class="white">Over mij</h2>
+                <span class="subtitle white">Een korte introductie</span>
+            </header>
+            <div class="row">
+                <article>
+                    <h3>Stijn van der Vegt</h3>
 
-<footer id="contact">
-    <div class="container">
-        <div class="contact">
-            <h3>Contact details</h3>
-            <ul>
-                <li>Commelinstraat 21-1</li>
-                <li>0629622814</li>
-                <li>stijnvandervegt@gmail.com</li>
-            </ul>
-        </div>
-        <div class="form">
-            <h3>Contact details</h3>
-            <form>
-                <input type="text" name="name" placeholder="name">
-                <input type="email" name="email" placeholder="email">
-                <textarea name="message" placeholder="message"></textarea>
-                <button type="submit" name="submit">Send message</button>
-            </form>
-        </div>
-    </div>
-</footer>
+                    <p>Mijn naam is Stijn van der Vegt, 27 jaar en woonachtig in Amsterdam. Momenteel heb ik ruim 4 jaar
+                        ervaring als front-end developer. Ik ben in 2013 van Media Concepts overgestapt naar Draad om daar
+                        als developer aan de slag te gaan. In twee jaar heb ik mij ontwikkeld tot een betrouwbare en
+                        toegewijde developer met veel kennis en ervaring in zowel front-end als back-end development. Open
+                        en altijd gretig om nieuwe dingen te leren of te delen. In de zoektocht naar een vaste baan binnen
+                        een grotere organisatie heb ik samen met Draad besloten eerst een periode van minimaal drie maanden
+                        aan de slag te gaan als freelance developer, bij voorkeur in Amsterdam.</p>
 
-<!-- Templates -->
-<template id="portfolioTemplate">
-    <div class="item" v-for="project in projects">
-        <div class="hover-box">
-            <span class="smallIcon">
-                <a rel="lightbox-demo" href="images/big-1.jpg" title="Project Title1" class="zoom lb lb_warsaw1">
-                    <i class="fa fa-search fa-2x"></i>
-                </a>
-                <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></a>
-            </span>
-        </div>
-
-        <a href="#portfolio" @click="showModal(project)" >
-            <img v-bind:src="project.thumbnail" alt="{{ project.name }}">
-        </a>
-        <modal :show.sync="project.showModal">
-
-            <h3 slot="header">{{ project.name }}
-                <a href="#portfolio" class="modal-default-button modal-close" @click="project.showModal = false">
-
-                </a>
-            </h3>
-            <div slot="body">
+                    <p>Ik ben gewend om in teamverband te werken. Code die niet overdraagbaar is, is geen code. Structuur en
+                        overzicht is erg belangrijk. Bij Draad schakelde ik in al mijn projecten rechtstreeks met de
+                        eindklant.</p>
+                    <button>Printbaar CV</button>
+                </article>
                 <figure>
-                    <img v-bind:src="project.thumbnail" alt="{{ project.name }}">
+                    <img src="assets/img/profile.jpg" alt="profile photo"/>
                 </figure>
-                <div class="content">
-                    <p>{{ project.description}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="skills">
+         <header>
+             <h2>Technical skills</h2>
+             <span class="subtitle"></span>
+         </header>
+         <div class="skills">
+             <div class="skill">
+                 <canvas></canvas>
+                 <hgroup>
+                     <h3>PHP</h3>
+                     <p>Donec accumsan Ligula vitae mag na crabitur id</p>
+                 </hgroup>
+             </div>
+         </div>
+     </section>-->
+    <section id="experience">
+        <div class="container">
+            <header>
+                <h2>Werkervaring</h2>
+                <span class="subtitle">Mijn recente werkgevers</span>
+            </header>
+            <div class="row">
+                <div class="work-year">
+                    <span>08-2013 - heden</span>
+                </div>
+                <div class="item">
+                    <h4>Draad internetprojecten</h4>
+                    <h5>Web developer</h5>
+
+                    <p>Ontwikkelen van applicaties op basis van Laravel. Custom Wordpress development. Front-end development op basis van Angular. </p>
                 </div>
             </div>
-            <div slot="footer">
-                <em>Keywords: {{ project.keywords }}</em>
-                <a href="{{ project.url }}" class="btn" target="_blank">Bekijk het project</a>
-
-            </div>
-        </modal>
-    </div>
-</template>
-<template id="singlePortfolio">
-    <div class="single-portfolio">
-        <figure>
-            <img v-bind:src="project.thumbnail" alt="{{ project.name }}">
-        </figure>
-        <h2>{{ project.name }}</h2>
-        <p>{{ project.description}}</p>
-
-
-    </div>
-
-</template>
-<!-- template for the modal component -->
-<script type="x/template" id="modal-template">
-    <div class="modal-mask" v-show="show" transition="modal">
-        <div class="modal-wrapper">
-            <div class="modal-container modal">
-
-                <div class="modal-header">
-                    <slot name="header">
-                        default header
-                    </slot>
+            <div class="row">
+                <div class="work-year">
+                    <span>01-2012 - 07-2013</span>
                 </div>
+                <div class="item">
+                    <h4>Hoteliers</h4>
+                    <h5>Web developer</h5>
 
-                <div class="modal-body">
-                    <slot name="body">
-                        default body
-                    </slot>
-                </div>
-
-                <div class="modal-footer">
-                    <slot name="footer">
-                        default footer
-                        <button class="modal-default-button"
-                                @click="show = false">
-                            Sluiten
-                        </button>
-                    </slot>
+                    <p>Als allround webdeveloper werkzaam voor vele hotelwebsites. Werkzaamheden vooral op het gebied van PHP development en het ontwikkelen van een nieuwe websitebuilder in Zend Framework.
+                        Daarnaast was ik verantwoordelijk voor de doorontwikkeling van een aantal maatwerk projecten zoals en webshops.</p>
                 </div>
             </div>
         </div>
-    </div>
-</script>
+    </section>
+    <section id="education">
+        <div class="container">
+            <header>
+                <h2>Opleidingen</h2>
+                <span class="subtitle">Studierichting</span>
+            </header>
+
+            <div class="row">
+                <div class="work-year">
+                    <span>2009 - juni 2015</span>
+                </div>
+                <div class="item">
+                    <h4>Communication and multimedia design</h4>
+                    <h5>Web developer</h5>
+
+                    <p>Studierichting techniek, design & interinteractie</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="work-year">
+                    <span>2005 – 2009</span>
+                </div>
+                <div class="item">
+                    <h4>CIOS Sport en Bewegen</h4>
+                    <h5>Web developer</h5>
+
+                    <p>Studierichting onderwijs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <header>
+                <h2 class="white">Portfolio</h2>
+                <span class="subtitle white">Laatste werk</span>
+            </header>
+           <!-- <div class="filter">
+                <a href="">All</a>
+                <a href="">Application</a>
+                <a href="">Frontend</a>
+                <a href="">Backend</a>
+            </div>-->
+            <div class="portfolio-container">
+                <portfolio></portfolio>
+
+            </div>
+        </div>
+
+    </section>
 
 
 
-<script src="/dist/assets/js/scripts.js" type="text/javascript"></script>
-</body>
-</html>
+    <footer id="contact">
+        <div class="container">
+            <div class="contact">
+                <h3>Contact details</h3>
+                <ul>
+                    <li>Commelinstraat 21-1</li>
+                    <li>0629622814</li>
+                    <li>stijnvandervegt@gmail.com</li>
+                </ul>
+            </div>
+            <div class="form">
+                <h3>Contact details</h3>
+                <form>
+                    <input type="text" name="name" placeholder="name">
+                    <input type="email" name="email" placeholder="email">
+                    <textarea name="message" placeholder="message"></textarea>
+                    <button type="submit" name="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Templates -->
+    <template id="portfolioTemplate">
+        <div class="item" v-for="project in projects">
+            <div class="hover-box">
+                <span class="smallIcon">
+                    <a rel="lightbox-demo" href="images/big-1.jpg" title="Project Title1" class="zoom lb lb_warsaw1">
+                        <i class="fa fa-search fa-2x"></i>
+                    </a>
+                    <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></a>
+                </span>
+            </div>
+
+            <a href="#portfolio" @click="showModal(project)" >
+                <img v-bind:src="project.thumbnail" alt="${{ project.name }}">
+            </a>
+            <modal :show.sync="project.showModal">
+
+                <h3 slot="header">${{ project.name }}
+                    <a href="#portfolio" class="modal-default-button modal-close" @click="project.showModal = false">
+
+                    </a>
+                </h3>
+                <div slot="body">
+                    <figure>
+                        <img v-bind:src="project.thumbnail" alt="${{ project.name }}">
+                    </figure>
+                    <div class="content">
+                        <p>${{ project.description}}</p>
+                    </div>
+                </div>
+                <div slot="footer">
+                    <em>Keywords: ${{ project.keywords }}</em>
+                    <a href="${{ project.url }}" class="btn" target="_blank">Bekijk het project</a>
+
+                </div>
+            </modal>
+        </div>
+    </template>
+    <template id="singlePortfolio">
+        <div class="single-portfolio">
+            <figure>
+                <img v-bind:src="project.thumbnail" alt="${{ project.name }}">
+            </figure>
+            <h2>${{ project.name }}</h2>
+            <p>${{ project.description}}</p>
+
+
+        </div>
+
+    </template>
+    <!-- template for the modal component -->
+    <script type="x/template" id="modal-template">
+        <div class="modal-mask" v-show="show" transition="modal">
+            <div class="modal-wrapper">
+                <div class="modal-container modal">
+
+                    <div class="modal-header">
+                        <slot name="header">
+                            default header
+                        </slot>
+                    </div>
+
+                    <div class="modal-body">
+                        <slot name="body">
+                            default body
+                        </slot>
+                    </div>
+
+                    <div class="modal-footer">
+                        <slot name="footer">
+                            default footer
+                            <button class="modal-default-button"
+                                    @click="show = false">
+                                Sluiten
+                            </button>
+                        </slot>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+
+    <script src="/dist/assets/js/scripts.js" type="text/javascript"></script>
+    </body>
+    </html>
